@@ -49,13 +49,17 @@ console.log(saldoAnziani)
 
 // Fase 6
 
-if (età < 18) { console.log("Hai uno sconto del " + saldoMinori) }
+let sconto;
+
+if (età < 18) { sconto = "Hai uno sconto del " + saldoMinori }
 
 else if (età > 65) {
-    console.log("Hai uno sconto del 20%" + saldoAnziani)
+    sconto = "Hai uno sconto del 20% il totale è" + saldoAnziani
 
 }
 else {
-    console.timeLog("non hai sconti")
+    sconto = "non hai sconti"
 
 }
+
+console.log(sconto)
