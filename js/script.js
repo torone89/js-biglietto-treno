@@ -44,10 +44,11 @@ console.log(Saldo);
 // FASE 5
 
 const saldoMinori = totaleViaggio - (totaleViaggio * 0.2)
-console.log(saldoMinori)
+console.log(saldoMinori.toFixed(2))
 
 const saldoAnziani = totaleViaggio - (totaleViaggio * 0.4)
-console.log(saldoAnziani)
+console.log(saldoAnziani.toFixed(2))
+
 
 // Fase 6 & 8 VALIDAZIONE
 
@@ -57,10 +58,10 @@ if (!isNaN(kilometri) && !isNaN(età) && (età, kilometri > 0)) {
 
 
 
-    if (età < 18) { sconto = saldoMinori + " Euro" + " Hai diritto a uno sconto del 20% percento perchè sei minorenne" }
+    if (età < 18) { sconto = saldoMinori.toFixed(2) + " Euro" + " Hai diritto a uno sconto del 20% percento perchè sei minorenne" }
 
     else if (età > 65) {
-        sconto = saldoAnziani + " Euro" + " Hai diritto a uno sconto del 40% percento perchè sei un over65 Anni"
+        sconto = saldoAnziani.toFixed(2) + " Euro" + " Hai diritto a uno sconto del 40% percento perchè sei un over 65 Anni"
 
     }
     else {
