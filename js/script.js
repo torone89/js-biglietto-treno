@@ -11,6 +11,7 @@ console.log('JS OK');
 4 Stampo il totale del viaggio senza sconto e inserisco html
 5 Calcolo Sconti del 20 % e del 60%
 6 Quando devo applicare lo sconto?
+7 Stampo gli sconti sul doc e inserisco un nuovo div
 
 */
 
@@ -51,15 +52,24 @@ console.log(saldoAnziani)
 
 let sconto;
 
-if (età < 18) { sconto = "Hai uno sconto del " + saldoMinori }
+if (età < 18) { sconto = saldoMinori + " Euro" + " Hai diritto a uno sconto del 20% percento perchè sei minorenne" }
 
 else if (età > 65) {
-    sconto = "Hai uno sconto del 20% il totale è" + saldoAnziani
+    sconto = saldoAnziani + " Euro" + " Hai diritto a uno sconto del 40% percento perchè sei un over65 Anni"
 
 }
 else {
-    sconto = "non hai sconti"
+    sconto = Saldo + " Euro" + " Non puoi beneiciare di nessun sconto"
 
 }
 
 console.log(sconto)
+
+// Fase 7
+
+
+const SaldoSconto = `<p><strong>La tua spesa totale è di:</strong> ${sconto}<p>`
+
+const Prova = document.getElementById('contoScontato')
+contoScontato.innerHTML = SaldoSconto
+console.log(SaldoSconto);
