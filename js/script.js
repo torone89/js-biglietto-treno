@@ -12,6 +12,7 @@ console.log('JS OK');
 5 Calcolo Sconti del 20 % e del 60%
 6 Quando devo applicare lo sconto?
 7 Stampo gli sconti sul doc e inserisco un nuovo div
+8 Valdazione
 
 */
 
@@ -48,19 +49,24 @@ console.log(saldoMinori)
 const saldoAnziani = totaleViaggio - (totaleViaggio * 0.4)
 console.log(saldoAnziani)
 
-// Fase 6
+// Fase 6 & 8 VALIDAZIONE
 
-let sconto;
+if (!isNaN(kilometri) && !isNaN(età) && (età, kilometri > 0)) {
+    let sconto;
 
-if (età < 18) { sconto = saldoMinori + " Euro" + " Hai diritto a uno sconto del 20% percento perchè sei minorenne" }
+    if (età < 18) { sconto = saldoMinori + " Euro" + " Hai diritto a uno sconto del 20% percento perchè sei minorenne" }
 
-else if (età > 65) {
-    sconto = saldoAnziani + " Euro" + " Hai diritto a uno sconto del 40% percento perchè sei un over65 Anni"
+    else if (età > 65) {
+        sconto = saldoAnziani + " Euro" + " Hai diritto a uno sconto del 40% percento perchè sei un over65 Anni"
 
+    }
+    else {
+        sconto = Saldo + " Euro" + " Non puoi beneiciare di nessun sconto"
+
+    }
 }
 else {
-    sconto = Saldo + " Euro" + " Non puoi beneiciare di nessun sconto"
-
+    alert("Devini inserire un coretto formato , inserisci solo numeri e un'età di nascita valida")
 }
 
 console.log(sconto)
