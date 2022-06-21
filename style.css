@@ -1,0 +1,20 @@
+p {
+    margin: 0;
+
+}
+
+#contoTotale {
+    background-color: yellow;
+    text-align: center;
+    text-decoration: underline;
+    padding: 30px;
+    background-color: blue 2px dashed;
+}
+
+
+
+#contoScontato {
+    background-color: aqua;
+    padding: 30px;
+    text-align: center;
+}

@@ -34,7 +34,7 @@ console.log(totaleViaggio)
 
 
 
-const Saldo = `<p>La tua spesa totale è di <strong>${totaleViaggio} Euro<strong<p>`
+const Saldo = `<p><h1>La tua spesa totale è di:</h1><strong>${totaleViaggio} Euro<strong<p>`
 
 const Conto = document.getElementById('contoTotale')
 contoTotale.innerHTML = Saldo
@@ -54,7 +54,7 @@ console.log(saldoAnziani.toFixed(2))
 
 let sconto;
 
-if (!isNaN(kilometri) && !isNaN(età) && (età, kilometri > 0)) {
+if (!isNaN(kilometri) && !isNaN(età) && (età > 0 & kilometri > 0)) {
 
 
 
