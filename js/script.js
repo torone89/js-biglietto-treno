@@ -12,7 +12,7 @@ console.log('JS OK');
 5 Calcolo Sconti del 20 % e del 60%
 6 Quando devo applicare lo sconto?
 7 Stampo gli sconti sul doc e inserisco un nuovo div
-8 Valdazione
+8 Validazione
 
 */
 
@@ -65,13 +65,13 @@ if (!isNaN(kilometri) && !isNaN(età) && (età > 0 & kilometri > 0)) {
 
     }
     else {
-        sconto = Saldo + " Euro" + " Non puoi beneiciare di nessun sconto"
+        sconto = Saldo + " Euro" + " Non puoi benefficiare di nessun sconto"
 
     }
     console.log(sconto)
 }
 else {
-    alert("Devini inserire un coretto formato , inserisci solo numeri e un'età di nascita valida")
+    alert("Devini inserire un corretto formato , inserisci solo numeri e un'età di nascita valida")
 
 }
 
