@@ -9,7 +9,7 @@ console.log('JS OK');
 2 Creare una variabile per contenere kilometri e chiedere all'utente il numero dei kilometri che vuole percorrere 
 3 Calcolo il totale del viaggio senza sconto
 4 Stampo il totale del viaggio senza sconto e inserisco html
-5 
+5 Calcolo Sconti del 20 % e del 60%
 
 */
 
@@ -21,19 +21,14 @@ console.log(età);
 const kilometri = prompt("Quanti kilometri vuoi percorrere", "20");
 console.log(kilometri);
 
-// FASE 2 
+// FASE 3
 const totaleViaggio = kilometri * 0.21
 console.log(totaleViaggio)
 
 
-// FASE 3 
+// FASE 4
 
-// const stileCosto = `<p>La tua spesa totale è di  <strong>${totaleViaggio}&euro;<strong><p>`
-// console.log(stileCosto);
 
-// const paragrafoTotale = document.getElementById('costoDelViaggio')
-// costoDelViaggio.innerHTML = stileCosto
-// console.log(paragrafoTotale)
 
 
 const Saldo = `<p>La tua spesa totale è di <strong>${totaleViaggio} Euro<strong<p>`
@@ -41,3 +36,12 @@ const Saldo = `<p>La tua spesa totale è di <strong>${totaleViaggio} Euro<strong
 const Conto = document.getElementById('contoTotale')
 contoTotale.innerHTML = Saldo
 console.log(Saldo);
+
+
+// FASE 5
+
+const saldoMinori = totaleViaggio - (totaleViaggio * 0.2)
+console.log(saldoMinori)
+
+const saldoAnziani = totaleViaggio - (totaleViaggio * 0.4)
+console.log(saldoAnziani)
