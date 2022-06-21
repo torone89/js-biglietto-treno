@@ -30,10 +30,6 @@ console.log(totaleViaggio)
 
 
 // FASE 4
-
-
-
-
 const Saldo = `<p><h1>La tua spesa totale è di:</h1><strong>${totaleViaggio} Euro<strong<p>`
 
 const Conto = document.getElementById('contoTotale')
@@ -58,10 +54,10 @@ if (!isNaN(kilometri) && !isNaN(età) && (età > 0 & kilometri > 0)) {
 
 
 
-    if (età < 18) { sconto = saldoMinori.toFixed(2) + " Euro" + " Hai diritto a uno sconto del 20% percento perchè sei minorenne" }
+    if (età < 18) { sconto = saldoMinori.toFixed(2) + " Euro" + " Hai diritto a uno sconto del 20% perchè sei minorenne" }
 
     else if (età > 65) {
-        sconto = saldoAnziani.toFixed(2) + " Euro" + " Hai diritto a uno sconto del 40% percento perchè sei un over 65 Anni"
+        sconto = saldoAnziani.toFixed(2) + " Euro" + " Hai diritto a uno sconto del 40% perchè sei un over 65 Anni"
 
     }
     else {
