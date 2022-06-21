@@ -51,8 +51,11 @@ console.log(saldoAnziani)
 
 // Fase 6 & 8 VALIDAZIONE
 
+let sconto;
+
 if (!isNaN(kilometri) && !isNaN(età) && (età, kilometri > 0)) {
-    let sconto;
+
+
 
     if (età < 18) { sconto = saldoMinori + " Euro" + " Hai diritto a uno sconto del 20% percento perchè sei minorenne" }
 
@@ -64,12 +67,14 @@ if (!isNaN(kilometri) && !isNaN(età) && (età, kilometri > 0)) {
         sconto = Saldo + " Euro" + " Non puoi beneiciare di nessun sconto"
 
     }
+    console.log(sconto)
 }
 else {
     alert("Devini inserire un coretto formato , inserisci solo numeri e un'età di nascita valida")
+
 }
 
-console.log(sconto)
+
 
 // Fase 7
 
